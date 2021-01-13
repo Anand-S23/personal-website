@@ -5,3 +5,63 @@
 .content {
     margin-bottom: 10px;
 }
+
+.jumbo {
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.jumbo-row {
+    margin-top: 40px;
+}
+
+.resume:focus,
+.resume { 
+    color: #fff;
+    background-color: gray;
+    border-color: gray;
+    border-radius: 0 !important;
+    text-align: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20px;
+}
+
+.resume:active,
+.resume:hover {
+    color: darkslategray;
+    background-color: white;
+    border-color: white;
+    border-radius: 0 !important;
+    outline: none;
+}
+
+.resume:focus {
+    outline: 0;
+    outline-style:none;
+    outline-width:0;
+    border-radius: 0 !important;
+}
+
+.project-cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.download-icon {
+    margin-right: 5px;
+}
+
+.link-out {
+    color: lightgray;
+}
+
+.link-out:hover {
+    color: white;
+}

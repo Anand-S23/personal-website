@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Projects, Footer } from "./components";
+import { Navigation, Home, Projects, Footer } from "./components";
 
 function App() {
   return (
@@ -9,7 +9,8 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/" exact component={() => <Projects />} />
+          <Route path="/" exact component={() => <Home />} />
+          <Route path="/projects" exact component={() => <Projects />} />
         </Switch>
         <Footer />
       </Router>
