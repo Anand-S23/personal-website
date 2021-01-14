@@ -65,3 +65,38 @@
 .link-out:hover {
     color: white;
 }
+
+.link-out-dark {
+    color: gray;
+}
+
+.link-out-dark:hover {
+    color: #292b2c;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+.content-space {
+    padding: 25px;
+}
+
+.form-content {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+.form-message {
+    height: 200px;
+}

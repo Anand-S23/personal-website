@@ -1,5 +1,5 @@
 import React from "react";
-import { Projects } from "../components";
+import { Current } from "../components";
 import { Container, Button, Jumbotron, Row, Col } from "react-bootstrap";
 import FontAwesome from "react-fontawesome";
 
@@ -12,7 +12,7 @@ function Home() {
               <Row className="jumbo-row">
                 <Col xs={8}>
                   <h5 className="header"> About Me </h5>
-                  <p>
+                  <p className="about-me">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -41,7 +41,7 @@ function Home() {
                </Button>
             </Jumbotron>
           </Container>
-          <Projects />
+          <Current />
       </div>
     );
 };
