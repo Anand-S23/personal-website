@@ -13,12 +13,10 @@ function Home() {
                 <Col xs={8}>
                   <h5 className="header"> About Me </h5>
                   <p className="about-me">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I am currently a Computer Science major at Temple University.
                   </p>
                 </Col>
-                <Col xs={4}>
+                <Col xs={4} className="contact-info">
                   <h5> Contact Info </h5>
                   <p>
                     Email: anandsroopsingh@gmail.com
