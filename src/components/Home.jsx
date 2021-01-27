@@ -10,13 +10,18 @@ function Home() {
             <Jumbotron className="jumbo bg-dark"> 
               <h1 className="header"> Anand Singh </h1>
               <Row className="jumbo-row">
-                <Col xs={8}>
+                <Col lg={8}>
                   <h5 className="header"> About Me </h5>
                   <p className="about-me">
                     I am currently a Computer Science major at Temple University.
+                    I am interested in the large array of application of computing, 
+                    and as well as the applications of computing and programming in 
+                    solving real world problems. I aspire to join current industry
+                    professionals in pushing the bounderies of what is possible with 
+                    computers. 
                   </p>
                 </Col>
-                <Col xs={4} className="contact-info">
+                <Col lg={4} className="custom-center">
                   <h5> Contact Info </h5>
                   <p>
                     Email: anandsroopsingh@gmail.com
@@ -29,14 +34,12 @@ function Home() {
                   </p>
                 </Col>
               </Row>
-               <Button variant="dark" className="resume">
-                   <Row>
-                     <Col className="text-center">
+                <div class="text-center">
+                  <Button variant="dark" className="resume">
                       <FontAwesome name="download" className="download-icon"></FontAwesome>
                        Download Resume
-                     </Col>
-                   </Row>
-               </Button>
+                  </Button>
+                </div>
             </Jumbotron>
           </Container>
           <Current />

@@ -1,59 +1,52 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
 
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <Navbar variant="dark" bg="dark" expand="lg">
         <div class="container">
-          <Link class="navbar-brand" to="/">
-             Anand Singh
-          </Link>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li
+          <Navbar.Brand className="nav-part">
+            <Link className="navbar-brand" to="/">
+              Anand Singh
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto nav-part">
+              <NavItem
                 class={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/">
+                <Link className="nav-link" to="/">
                   Home
                   <span class="sr-only">(current)</span>
                 </Link>
-              </li>
-              <li
+              </NavItem>
+              <NavItem
                 class={`nav-item  ${
                   props.location.pathname === "/projects" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/projects">
+                <Link className="nav-link" to="/projects">
                   Projects
                 </Link>
-              </li>
-              <li
+              </NavItem>
+              <NavItem
                 class={`nav-item  ${
                   props.location.pathname === "/contact-me" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/contact-me">
+                <Link className="nav-link" to="/contact-me">
                   Contact Me
                 </Link>
-              </li>
-            </ul>
-          </div>
+              </NavItem>
+            </Nav>
+          </Navbar.Collapse>
         </div>
-      </nav>
+      </Navbar>
     </div>
   );
 }

@@ -22,15 +22,12 @@
     border-color: gray;
     border-radius: 0 !important;
     text-align: center;
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
     margin-top: 20px;
 }
 
 .resume:active,
 .resume:hover {
-    color: darkslategray;
+    color: rgb(70, 70, 70);
     background-color: white;
     border-color: white;
     border-radius: 0 !important;
@@ -101,3 +98,23 @@ input[type=text], input[type=email], select, textarea {
 .form-message {
     height: 200px;
 }
+
+button:focus,
+input:focus, 
+a:focus {
+    outline: none;
+}
+
+.nav-link,
+.nav-part,
+.nav-link:hover {
+    text-decoration: none !important;
+}
+
+@media (max-width:995px) { 
+    .custom-center {
+        text-align: center;
+    }
+} 
+
+
