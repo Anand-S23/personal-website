@@ -12,8 +12,8 @@ function Current() {
         <h2 className="header"> Check Out What I am Currently Working On </h2>
         <h5 className="header"> To look at my some of my completed projects click <Link className="link-out-dark" to="/projects">HERE</Link></h5>
         <div className="project-cards">
-          <Row className="project-row">
-            <Col>
+          <Row>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img className="project-img" variant="top" src={pixelate} />
                 <Card.Body>
@@ -27,7 +27,7 @@ function Current() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={a_star} />
                 <Card.Body>
@@ -41,7 +41,7 @@ function Current() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={solver} />
                 <Card.Body>

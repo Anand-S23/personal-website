@@ -13,8 +13,8 @@ function Projects() {
       <Container>
         <h2 className="header"> Projects </h2>
         <div className="project-cards">
-          <Row className="project-row">
-            <Col>
+          <Row>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={instaclone} />
                 <Card.Body>
@@ -29,7 +29,7 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={maze} />
                 <Card.Body>
@@ -44,7 +44,7 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={chess} />
                 <Card.Body>
@@ -59,9 +59,7 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
-          <Row className="project-row">
-            <Col>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={cellular} />
                 <Card.Body>
@@ -76,7 +74,7 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={server} />
                 <Card.Body>
@@ -91,7 +89,7 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="project">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={tasks} />
                 <Card.Body>
